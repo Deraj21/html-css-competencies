@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  /* 23E */
+  background-color: #FCA71E;
+  color: white;
+  font-weight: bold;
+  /* 24E */
+  padding: 10px 20px;
+  /*  24C */
+  margin: 10px;
+  /* 24D */
+  border: 1px solid gray;
+  /* 24F */
+  box-sizing: border-box;
+  border-radius: 10px;
+  cursor: pointer;
+  /* 23D-1 */
+  font-weight: bold;
+}
+button:hover{
+  background-color: rgb(255, 179, 16)
+}
+
+h1 {
+  /* 23D-3 */
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 30px
+}
+
+h3 {
+  font-size: 20px;
+}
+
+a {
+  /* 23D-2 */
+  color: lightcyan;
+  text-decoration: none;
+}
+a:hover{
+  color: white;
+}
+
+/* 22C-2 */
+.top {
+  /* 23F */
+  background-image: url('./media/Crusher\ Landing.jpg');
+  background-size: cover;
+  height: 800px;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: baseline;
+  align-content: baseline;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  margin: 5px 15px;
+  color: rgb(36, 184, 233);
+  font-size: 12px;
+  cursor: pointer;
+}
+.nav-link:hover {
+  color: #FCA71E;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+/* 22c-4 */
+.top > a {
+  text-align: right;
+}
+
+/* 22C-5 */
+h3 + p {
+  font-weight: bold;
+}
+
+/* 22C-3 */
+.sm-logos img {
+  height: 50px;
+  width: 50px;
+}
+
+/* 22C-1 */
+#big-title {
+  font-size: 55px;
+}
+
+
+/*
+body
+  top
+    header
+      title
+      nav-links
+        nav-link*10
+    cta
+    p(photo by...)
+  
+  middle
+    title-box
+    long-tile-box
+      long-tile*3
+    small-tile-box
+      small-tile*3
+  
+  footer
+    img
+    p
+    sm-logos
+      img*5
+
+
+*/
