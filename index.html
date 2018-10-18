@@ -3,10 +3,18 @@
 <html>
 <!-- 54I-2 -->
 <head>
+  <!-- 58C -->
+  <meta name="title" content="Garage Fx">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- 58D -->
+  <meta name="description" content="The Best Place to Learn Costume Making" >
+  <!-- 58E -->
+  <meta name="keywords" content="Costume Cosplay Special Effects">
   <title>GarageFx | Home</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- 54H -->
   <link rel="stylesheet" type="text/css" href="reset.css">
+  <!-- 58G -->
   <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <!-- 54I-3 -->
@@ -52,8 +60,8 @@
       <div class="long-tile">
         <div>
           <!-- 54J -->
-          <img src="./logos/comicon.png" alt="comicon">
-          <img src="./logos/rhino.png" alt="rhino">
+          <img class="logo" src="./logos/comicon.png" alt="comicon">
+          <img class="logo" src="./logos/rhino.png" alt="rhino">
           <h3>Comic Conventions</h3>
           <p>We go to Comic-Cons and show how to make costumes cheaply and professionally.</p>
           <button>Learn More</button>
@@ -64,7 +72,7 @@
       <div class="long-tile">
         <img src="./media/products.jpg" alt="merch">
         <div>
-          <img src="./logos/shopping-cart.png" alt="shopping-cart">
+          <img class="logo" src="./logos/shopping-cart.png" alt="shopping-cart">
           <h3>Etsy</h3>
           <p>We go to Comic-Cons and show how to make costumes cheaply and professionally.</p>
           <button>Go To Etsy</button>
@@ -72,7 +80,7 @@
       </div>
       <div class="long-tile">
           <div>
-            <img src="./logos/deadpool.png" alt="deadpool">
+            <img class="logo" src="./logos/deadpool.png" alt="deadpool">
             <h3>Cosplay tuts</h3>
             <p>We go to Comic-Cons and show how to make costumes cheaply and professionally.</p>
             <button>Start Learngin</button>
@@ -82,17 +90,28 @@
     </div>
     <div class="small-tile-box">
       <div class="small-tile">
-        <h2>GARAGE FX GRADUATES</h2>
+        <a><h2>GARAGE FX GRADUATES</h2></a>
         <p>Here, you will find the people that have learned with us, and are now making tons of super cool things!</p>
         <img src="./media/tree.jpg" alt="graduates">
       </div>
       <div class="small-tile">
-        <h2>LEARN MORE ABOUT US</h2>
+        <a><h2>LEARN MORE ABOUT US</h2></a>
         <p>Here, you will find out more about who we are, what we do, and how to contact us with any questions.</p>
-        <img src="./media/team.jpg" alt="learn about us">
+        <!-- 56C -->
+        <video
+          controls
+          muted
+          src="./media/this-is-a-video.mp4"
+          width="400"
+          height="300"
+        ></video>
+        <audio id="piano-1"
+          controls
+          src="./media/The-fearless-interview-Ryan-LaBouve.mp3"
+        ></audio>
       </div>
       <div class="small-tile">
-        <h2>CHECK OUT OUR LATEST BUILDS</h2>
+        <a><h2>CHECK OUT OUR LATEST BUILDS</h2></a>
         <p>Here, you will find the latest completed project, and what we are currently working on!</p>
         <img src="./media/mask.jpg" alt="latest build">
       </div>
@@ -106,17 +125,23 @@
     <p>Copyright © Garage FX. All rights reserved</p>
     <div class="sm-logos">
       <!-- 54C-2 -->
-      <span><img src="./logos/facebook.png" alt="fasebook"></span>
-      <span><img src="./logos/twitter.png" alt="twitter"></span>
-      <span><img src="./logos/instagram.png" alt="insta"></span>
-      <span><img src="./logos/youtube.png" alt="youtube"></span>
-      <span><img src="./logos/etsy.png" alt="etsy"></span>
+      <span><img class="logo" src="./logos/facebook.png" alt="fasebook"></span>
+      <span><img class="logo" src="./logos/twitter.png" alt="twitter"></span>
+      <span><img class="logo" src="./logos/instagram.png" alt="insta"></span>
+      <span><img class="logo" src="./logos/youtube.png" alt="youtube"></span>
+      <span><img class="logo" src="./logos/etsy.png" alt="etsy"></span>
     </div>
   </footer>
 
   <!-- 61C -->
   <script>
-    console.log('Hello World');
+    
+    for (let i = 0; i < 5; i++){
+      setTimeout(() => {
+        console.log('Hello ' + i);
+      }, 2000*i);
+    }
+
   </script>
 
 </body>
