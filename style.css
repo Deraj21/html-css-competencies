@@ -66,6 +66,7 @@ a:hover{
   height: 800px;
   background-repeat: no-repeat;
   color: white;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -79,11 +80,26 @@ a:hover{
 
 footer {
   background-color: rgb(66, 66, 66);
-  padding: 20px 300px;
+  padding: 20px 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: baseline;
+}
+
+.behind-footer {
+  height: 400px;
+  padding: 20px 400px;
+}
+
+/* 25D */
+.float-box {
+  border: 5px orangered solid;
+  height: 50px;
+  width: 200px;
+  float: right;
+  text-align: center;
+  padding: 20px;
 }
 
 .title {
@@ -93,7 +109,10 @@ footer {
 }
 
 .logo {
+  /* 30C */
   box-shadow: none;
+  margin: 10px;
+  cursor: pointer;
 }
 
 .nav-links ul {
@@ -203,3 +222,25 @@ h3 + p {
   width: 40px;
 }
 
+
+#absolute {
+  /* 25F */
+  display: inline-block;
+  /* 25C */
+  position: absolute;
+  left: 20.5vw;
+  top: 9.5in;
+}
+
+#relative {
+  display: inline-block;
+  /* 25C */
+  position: relative;
+  left: 46px;
+}
+
+#fixed {
+  /* 25C */
+  position: fixed;
+  bottom: 0px;
+}
