@@ -98,7 +98,7 @@
         <a><h2>LEARN MORE ABOUT US</h2></a>
         <p>Here, you will find out more about who we are, what we do, and how to contact us with any questions.</p>
         <!-- 56C -->
-        <video
+        <video id="video"
           controls
           muted
           src="./media/this-is-a-video.mp4"
@@ -125,7 +125,7 @@
     <p>Copyright © Garage FX. All rights reserved</p>
     <div class="sm-logos">
       <!-- 54C-2 -->
-      <span><img class="logo" src="./logos/facebook.png" alt="fasebook"></span>
+      <span><img class="logo" src="./logos/facebook.png" alt="facebook"></span>
       <span><img class="logo" src="./logos/twitter.png" alt="twitter"></span>
       <span><img class="logo" src="./logos/instagram.png" alt="insta"></span>
       <span><img class="logo" src="./logos/youtube.png" alt="youtube"></span>
@@ -134,18 +134,20 @@
   </footer>
 
   <div class="behind-footer">
-    <div class="float-box">Float Box</div>
+    <div class="float-box">Don't Click me!</div>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quo impedit pariatur, neque itaque modi quaerat sint rem praesentium, eius facere dignissimos accusantium illo architecto quidem eos molestias. Hic, a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptates ex dignissimos totam neque, animi, velit, nihil perspiciatis earum maiores quod eius delectus id vero numquam inventore quas ea dolorem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt modi a enim illo laudantium ab vitae ipsam itaque placeat deserunt veritatis quam laboriosam accusantium mollitia, tenetur dolor quo soluta officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor id sapiente est quibusdam soluta placeat laborum explicabo dicta, consequatur cum earum praesentium voluptate delectus quasi modi? Veritatis, modi excepturi. Mollitia.</p>
   </div>
 
   <!-- 61C -->
   <script>
-    
-    for (let i = 0; i < 5; i++){
-      setTimeout(() => {
-        console.log('Hello ' + i);
-      }, 2000*i);
+    function playSound() {
+      let audio = document.querySelector("#piano-1");
+      audio.currentTime = 0;
+      audio.play();
     }
+
+    let box = document.querySelector(".float-box");
+    box.addEventListener('click', playSound);
 
   </script>
 
